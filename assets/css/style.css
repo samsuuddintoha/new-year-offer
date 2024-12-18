@@ -8,6 +8,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: "Inter", serif;
@@ -43,7 +44,8 @@ p {
 }
 /* New Year Banner */
 main {
-  margin: 0 250px;
+  max-width: 1320px;
+  margin: 0 auto;
 }
 .new-year {
   background-image: radial-gradient(rgba(0, 0, 0, .1), var(--dark)), url('../images/Banner-Image.png');
@@ -51,7 +53,7 @@ main {
   background-position: bottom left, bottom right;
   background-size: cover;
   margin-top: 50px;
-  padding: 250px;
+  padding: 150px;
   color: var(--white);
   border-radius: 20px;
 }
@@ -89,9 +91,11 @@ main {
   background-repeat: no-repeat;
   background-position: right left;
   background-size: cover;
-  padding: 150px 100px;
+  padding: 100px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  gap: 50px;
   border-radius: 20px;
 }
 .party-content {
@@ -104,6 +108,7 @@ main {
   letter-spacing: 5px;
 }
 .party-content .party-description {
+  color: #b4b4b4;
   font-size: 1.1rem;
   margin: 30px 0;
 }
@@ -141,7 +146,12 @@ main {
   background-color: var(--white);
   padding: 30px;
   border: 15px solid var(--primary);
-  border-radius: 100%;
+  height: 365px;
+  width: 365px;
+  border-radius: 365px;
+}
+.coming-soon-column .img-wrapper img {
+  width: 100%;
 }
 
 .coming-soon-column .column-title {
@@ -152,4 +162,107 @@ main {
 .coming-soon-column .column-description {
   margin-top: 10px;
   margin-bottom: 30px;
+}
+
+/* Holyday Style */
+.holyday {
+  text-align: center;
+}
+.holyday .title {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+.holyday .discount {
+  font-family: "Merriweather", serif;
+  font-size: 4.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.holyday .discount span {
+  color: var(--primary);
+}
+.holyday .details {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.holyday-image-content {
+  background-image: url('../images/Rectangle-2.png');
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+}
+.holyday-image-content .image-column .right {
+  margin-top: 50px;
+}
+
+/* Portfolio Style */
+.portfolio .details {
+  max-width: 700px;
+  margin-bottom: 30px;
+}
+.portfolio .portfolio-content {
+  display: grid;
+  grid-template: auto / auto auto auto;
+  gap: 30px;
+}
+
+/* Newsletter */
+.newsletter {
+  background-color: var(--bg);
+  padding: 80px 0;
+  text-align: center;
+  border-radius: 20px;
+}
+.newsletter .details {
+  max-width: 700px;
+  margin: 30px auto;
+}
+.newsletter .subscribe input {
+  padding: 16px 35px;
+  border: 0;
+}
+.newsletter .subscribe #email {
+  border-radius: 30px 0 0 30px;
+  color: var(--p-color);
+  overflow: hidden;
+}
+.newsletter .subscribe .subscribe-btn {
+  border-radius: 0 30px 30px 0;
+  color: var(--white);
+  background-color: var(--primary);
+  cursor: pointer;
+  margin-left: -5px;
+}
+
+/* Footer Style */
+footer {
+  color: var(--white);
+  background-color: var(--dark);
+}
+footer .footer-content {
+  padding: 100px 250px;
+}
+footer .footer-content hr {
+  margin: 30px 0;
+  border: 1px solid var(--p-color);
+}
+footer .footer-content .content {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-content .content address{
+  max-width: 280px;
+}
+footer .footer-content .social-icon {
+  text-align: center;
+}
+footer .footer-content .social-icon img {
+  margin: 0 10px;
+}
+footer .footer-content .copyright {
+  display: flex;
+  justify-content: space-between;
 }
