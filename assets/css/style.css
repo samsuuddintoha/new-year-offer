@@ -1,0 +1,155 @@
+:root {
+  --primary: #FF0000;
+  --bg: #fff1f1;
+  --dark: #070211;
+  --p-color: #6D6D6D;
+  --white: #ffffff;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Inter", serif;
+}
+/* Common Style */
+.section-title {
+  color: var(--dark);
+  font-family: "Merriweather", serif;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.section-description {
+  text-transform: uppercase;
+  color: var(--primary);
+  font-size: 1.5rem;
+}
+.primary-btn {
+  color: var(--white);
+  background-color: var(--primary);
+  padding: 16px 32px;
+  border: 0;
+  border-radius: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+section {
+  margin: 100px auto;
+}
+p {
+  color: var(--p-color);
+}
+/* New Year Banner */
+main {
+  margin: 0 250px;
+}
+.new-year {
+  background-image: radial-gradient(rgba(0, 0, 0, .1), var(--dark)), url('../images/Banner-Image.png');
+  background-repeat: no-repeat;
+  background-position: bottom left, bottom right;
+  background-size: cover;
+  margin-top: 50px;
+  padding: 250px;
+  color: var(--white);
+  border-radius: 20px;
+}
+.new-year-banner {
+  font-family: "Merriweather", serif;
+  max-width: 640px;
+  text-align: center;
+  margin: 0 auto;
+}
+.new-year .banner-title {
+  font-size: 1.8rem;
+}
+.new-year .banner-description {
+  font-size: 5rem;
+}
+
+/* Offer Section */
+.offer {
+  text-align: center;
+}
+.offer .off {
+  font-size: 6.5rem;
+  color: var(--primary);
+  margin-bottom: 40px;
+}
+.offer .section-title {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-family: "Inter", serif;
+}
+
+/* Party Section */
+.party {
+  background-image: linear-gradient(to right, var(--dark), rgba(255, 255, 255, 0)), url('../images/Vectorrr.png');
+  background-repeat: no-repeat;
+  background-position: right left;
+  background-size: cover;
+  padding: 150px 100px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+}
+.party-content {
+  color: var(--white);
+  max-width: 620px;
+}
+.party-content .party-title {
+  font-family: "Merriweather", serif;
+  font-size: 4rem;
+  letter-spacing: 5px;
+}
+.party-content .party-description {
+  font-size: 1.1rem;
+  margin: 30px 0;
+}
+
+/* Booking Style */
+.booking {
+  background-image: linear-gradient(var(--bg), rgba(255, 255, 255, 0));
+  text-align: center;
+  font-weight: 600;
+  padding: 100px 0;
+  border-radius: 20px;
+}
+.booking-content {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.booking-content div {
+  margin-bottom: 10px;
+}
+.booking-content div > span {
+  color: var(--primary);
+}
+
+/* Coming Soon */
+.coming-soon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+.coming-soon .coming-soon-column {
+  max-width: 33.3%;
+}
+.coming-soon-column .img-wrapper {
+  background-color: var(--white);
+  padding: 30px;
+  border: 15px solid var(--primary);
+  border-radius: 100%;
+}
+
+.coming-soon-column .column-title {
+  color: var(--primary);
+  font-size: 4rem;
+  font-weight: 800;
+}
+.coming-soon-column .column-description {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
